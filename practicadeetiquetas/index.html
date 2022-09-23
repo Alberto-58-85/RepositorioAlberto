@@ -9,9 +9,6 @@
         h2 {
             color: blue;
         }
-        li {
-            list-style: decimal;
-        }
     </style>
 </head>
 <body>
@@ -19,7 +16,7 @@
     <p>Existen otros tipos de etiqutas para crear una página web en <b>HTML5</b> que nos permiten encuadrar otros
         elementos dentro de las páginas web. Algunas de las más usadas son:</p>
 
-    <ul>
+    <ol>
         <h2 =><li>&lt;a&gt;</li></h2>
         <p>Permite anclar una dirección URL <br>
             Ejemplo:</p>
@@ -35,19 +32,12 @@
         <p>Define la información de contacto del autor/propietario de un documento u artículo. <br>
             Ejemplo:
             <address>Escrito por <a href="">Alfonzo6z</a></address>
-        
-        <h2 =><li>&lt;abbr&gt;</li></h2>
-        <p>Representa una abreviación o acronimo el atributo opcional title puede ampliar o describir la abrebiatura,
-            si esta presente el atributo title tiene que contener la descripción completa y nada más <br>
-            Ejemplo: <br><br>
-            Yo hago <abbr title="Hyper Text Markup Lenguage">HTML</abbr>
         </p>
 
         <h2 =><li>&lt;article&gt;</li></h2>
         <p>Un artículo debe tener sintido por sí mismo y debe ser posible distriburilo independientemente del resto
             del sitio. <br>
             Fuentes potenciales para el elemento article: <br>
-            
             <ul>
                 <li>Publicación en el foro</li>
                 <li>Entrada en el blog</li>
@@ -55,7 +45,7 @@
             </ul>
         <p> <b>NOTA:</b> &lt;article&gt; no se muestra como algo especial en un navegador. Sin embargo, puede
             usar CSS paradarle diseño <br>
-            <article> <a href="">Ejemplo article con css</a></article> 
+            <article> <a href="example/article.html">Ejemplo article con css</a></article> 
         </p>
 
         <h2 =><li>&lt;audio&gt;</li></h2>
@@ -64,9 +54,44 @@
             navegador. <br>
         <p>Ejemplo:</p>
 
-        <audio controls source="teclado-mecanografia"></audio> 
+        <audio controls>
+            <source src="audio/teclado-mecanografia.mp3"></audio> 
+        
+            <h2 =><li>&lt;button&gt;</li></h2>    
+        <p>Define un botón en el que es puede hacer clic. <br>
+            Dentro de un &lt;button&gt; puedes poner texto (y etiquteas como &lt;i&gt;,&lt;b&gt;,&lt;strong&gt;,&lt;img&gt;,&lt;, etc ). !Eso no es
+            posible con un botón creado con el &lt;input&gt; <br>
+            Sugerencia: Especifique siembre el type de un &lt;button&gt, para indicar a los navegadores qué tipo de botón
+            es. <br>
+            <b>Consejo: Puede diseñar botones facilmente con CSS</b> <br><br>
+            Ejemplo:
+            <button style="background-color:green; color:white;" onclick="alert('hola alberto')">Saludame</button>
+            <button style="background-color:blue; color:white;" onclick="alert('Salida alberto')">Salir</button>
+            </p>    
 
-            
-    </ul>
+            <h2 =><li>&lt;form&gt;</li></h2>
+            <p>Es un contenedor para diferentes tipo de elementos de entrada, como: campos de texto, casillas de
+                verificación, botones de opción, botones de envío, etc. <br>
+            <ul>
+                <li>&lt;input type="text"&gt;</li>
+                <p>Muestra un campo de entrada de texto de una solo line</p>
+                <input type="text">
+                <li>&lt;input type="radio"&gt;</li>
+                <p>Muestra un botón de radio (para selecionar una de muchas opciones)</p>
+                <input type="radio">  <input type="radio"> <input type="radio">
+                <li>&lt;input type="checkbox"&gt;</li>
+                <p>Muestra una casilla de verificación (para selecionar cero o más opciónes)
+                </p>
+                <input type="checkbox"> <input type="checkbox"> <input type="checkbox">
+                <li>&lt;input type="submit"&gt;</li>
+                <p>Muestra un botón de envio(para enviar el formulario)
+                </p>
+                <input type="submit"> <br><br>
+                <li>&lt;input type="button"&gt;</li>
+                <p>Muestra un botón en el que se puede hacer clic</p>
+                <input type="button">
+            </ul>
+
+    </ol>
 </body>
 </html>
