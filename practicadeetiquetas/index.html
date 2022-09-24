@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-    <h1>Etiquetashtml</h1>
+    <h1>Etiquetas html</h1>
     <p>Existen otros tipos de etiqutas para crear una página web en <b>HTML5</b> que nos permiten encuadrar otros
         elementos dentro de las páginas web. Algunas de las más usadas son:</p>
 
@@ -47,6 +47,14 @@
             usar CSS paradarle diseño <br>
             <article> <a href="example/article.html">Ejemplo article con css</a></article> 
         </p>
+        
+        <h2 =><li>&lt;aside&gt;</li></h2>
+        <p>Define algún contenido además del contenido en el que se coloca. El contenido aparte debe estar indirectamente relacionado con el contenido circulante. <br>
+            <b>Sugerencia:</b>  aside se coloca a menudo como una barra lateral en un documento. <br>
+            <b>Nota:</b> Este elemento no se muestra como algo especial en el navegador. Sin embargo, puede
+            usar CSS paradiseñar el aside.
+            <aside> <a href="example/aside.html">Ejemplo aside con css</a></aside>
+        </p>
 
         <h2 =><li>&lt;audio&gt;</li></h2>
         <p>Agrega controles de audio, como reproducción, pausa y volumen.
@@ -57,19 +65,19 @@
         <audio controls>
             <source src="audio/teclado-mecanografia.mp3"></audio> 
         
-            <h2 =><li>&lt;button&gt;</li></h2>    
+        <h2 =><li>&lt;button&gt;</li></h2>    
         <p>Define un botón en el que es puede hacer clic. <br>
             Dentro de un &lt;button&gt; puedes poner texto (y etiquteas como &lt;i&gt;,&lt;b&gt;,&lt;strong&gt;,&lt;img&gt;,&lt;, etc ). !Eso no es
             posible con un botón creado con el &lt;input&gt; <br>
             Sugerencia: Especifique siembre el type de un &lt;button&gt, para indicar a los navegadores qué tipo de botón
             es. <br>
             <b>Consejo: Puede diseñar botones facilmente con CSS</b> <br><br>
-            Ejemplo:
+            Ejemplo: <br><br>
             <button style="background-color:green; color:white;" onclick="alert('hola alberto')">Saludame</button>
             <button style="background-color:blue; color:white;" onclick="alert('Salida alberto')">Salir</button>
             </p>    
 
-            <h2 =><li>&lt;form&gt;</li></h2>
+        <h2 =><li>&lt;form&gt;</li></h2>
             <p>Es un contenedor para diferentes tipo de elementos de entrada, como: campos de texto, casillas de
                 verificación, botones de opción, botones de envío, etc. <br>
             <ul>
@@ -91,7 +99,72 @@
                 <p>Muestra un botón en el que se puede hacer clic</p>
                 <input type="button">
             </ul>
+            <form action=""><a href="example/form.html">Ejemplo form</a></form>
 
+        <h2 =><li>&lt;footer&gt;</li></h2>
+            <p>Define un pie de página para un documento o sección <br>
+               Normalmente contiene:</p>
+            <ul>
+                <li>Información de autoría</li>
+                <li>Información de registro</li>
+                <li>Información del contacto</li>
+                <li>Mapa del sitio</li>
+                <li>Volver a los enlaces superiores</li>
+                <li>Documentos relacionados</li>
+            </ul>  <br>
+                 <footer><a href="example/footer.html">Ejemplo footer</a></footer>
+
+        <h2 =><li>&lt;header&gt;</li></h2> 
+            <p>Representa un contenedor de contenido introductorio o un conjunto de enlaces de navegación. <br>
+                Normalmente contiene:</p>
+                <ul>
+                <li>Uno a más elementos de encabezado (&lt;h1&gt; - &lt;h6&gt;)</li>
+                <li>Logotipo o icono</li>
+                <li>Información de autoría</li>
+                <b>NOTA:</b> Puede tener varios &lt;header&gt; en un documento HTML.
+                    Sin embargo, no se puede colocar dentro de un &lt;footer&gt;, &lt;address&gt; u otro &lt;header&gt;
+                    </ul>
+            <p>Ejemplo:</p>   
+            <h1><header>Encabezado de la primera pagina</header></h1> 
+            <p>Publicado el 17/08/2022</p>  
+        
+        <h2 =><li>&lt;hgroup&gt;</li></h2>
+            <p>Generalmente se usa para agrupar un conjunto de uno o más elementos &lt;h1&gt; - &lt;h6&gt;, para agrupar,
+                por ejemplo, un titulo de sección y un subtitulo adjunto.</p>
+            <hgroup><a href="example/hgroup.html">Ejemplo hgroup</a></hgroup>
+
+        <h2 =><li>&lt;h1&gt; - &lt;h6&gt;</li></h2>
+            <p>Se utilizan para definir encabezados HTML. <br>
+                Ejemplo:</p>
+            <h1 style="background-color: blue; color: black;">Hola Mundo!</h1>
+            <h2 style="color: brown ;">Hola Mundo!</h2>
+            
+        <h2 =><li>&lt;img&gt;</li></h2>
+            <p>Se utiliza para incrustar una imagen en una página HTML. <br>
+                Técnicamente, las imágenes no se insertan en una página web; las imágenes están vinculadas a páginasweb. La
+                etiqueta &lt;img&gt; crea un espacio de espera para la imagen de referencia.
+                Tiene atributos obligatorios:</p>
+            <ul>
+                <li>src: especifica la ruta a la imagen</li>
+                <li>alt: especifica un texto alternativo para la imagen, si la imagen por algún motivo no se puede mostrar</li> 
+            </ul> <br>
+            <a href="example/img.html">Ejemplo img</a>
+        
+        <h2 =><li>&lt;map&gt;</li></h2>
+            <p>Se utiliza para definir un mapa de imagen, es una imagen con áreas en las que se puede hacer clic. <br>
+                El atributo de nombre requerido del &lt;map&gt; esta asocioado con el atributo usemap de &lt;img&gt;
+                y crea unarelación entre la imagen y el mapa.</p>
+            <a href="example/map.html">Ejemplo map</a>
+
+        <h2 =><li>&lt;nav&gt;</li></h2>   
+            <p>Define un conjunto de enlaces de navegación. <br>
+               Tenga en cuenta que NO todos los enlaces de un documento deben estar dentro de un &lt;nav&gt;. Este elemento
+               está destinado solo para el bloque principal de enlaces de navegación.
+                </p>
+               Ejemplo: <br> <br>
+            
+            <a href="http://google.com">Google</a> | <a href="http://youtube.com">YouTube</a> | <a href="http://hithub.com">HitHub</a> | 
+            <a href="http://edc.com">EDC</a>
     </ol>
 </body>
 </html>
