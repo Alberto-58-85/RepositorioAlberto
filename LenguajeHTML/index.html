@@ -3,27 +3,109 @@
 
 <head>
     <title>Ejemplo</title>
+    <style>
+        .caja1 {
+            background-color: #322E2F;
+            font-family: Arial;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .caja2 {
+            background-color: #C7DDCC;
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 1px
+        }
+
+        a {
+            padding: 50px;
+
+        }
+
+        .mismonivel {
+            display: flex;
+        }
+
+        .caja3 {
+            background-color: #C7DDCC;
+            color: #000000;
+            font-family: Arial;
+            text-align: center;
+            padding: 100px;
+            float: left;
+            width: 300px;
+            height: 300px;
+
+
+        }
+
+        div {
+            background-color: #12A4D9;
+            padding: 60px;
+            width: 85vh;
+
+        }
+
+        .caja4 {
+            background-color: #D9138A;
+            text-align: center;
+            float: left;
+            width: 300px;
+            height: 300px
+        }
+    </style>
+
+
+
 </head>
 
-<body style="background-color: #75C9B7 ;">
-    <header style="background-color: #322E2F;">
-        <h1 style="color:#C9E0CE ">ENCABEZADO NIVEL 1</h1>
-    
-    <nav style="background-color:#C7DDCC ;">
-        <a href="http://google.com">ENLACE 1</a>  <a href="http://google.com">ENLACE 2</a>
-        <a href="http://google.com">ENLACE 3</a>  <a href="http://google.com">ENLACE 4</a>
-    </nav>
+<body style="background-color: #75C9B7;">
 
-</header>
-    <header style="background-color: #12A4D9;"
-    ><h1>ENCABEZADO NIVEL 2</h1>
+    <header class="caja1">
+        <h1 style="color: #C7DDCC;">ENCABEZADO NIVEL 1</h1>
 
-    <P>Aqui va texto del primer parrafo</P>
-    <P>Aqui va texto del segundo parrafo</P>
-</header>
-<h1 style="color:#000000 ">APARTADO</h1>
+        <header class="caja2">
+            <h2 style="color: #000000;">
+                <nav>
+                    <a href="http://google.com" style="text-decoration:none"> ENLACE 1 </a> <a href="http://google.com"
+                        style="text-decoration:none"> ENLACE 2 </a>
+                    <a href="http://google.com" style="text-decoration:none"> ENLACE 3 </a> <a href="http://google.com"
+                        style="text-decoration:none"> ENLACE 4</a>
+                </nav>
+            </h2>
+        </header>
+    </header>
 
-    
+    <div class="mismonivel">
+        <div class="caja 3" style="background-color: #12A4D9; float: left; padding: 50px; width: 300px; height: 100px; float: left;">
+            <h1>
+                ENCABEZADO NIVEL 2</h1>
+            <P>Aqui va texto del primer <b>parrafo.</b></P>
+            <P>Aqui va texto del segundo parrafo.</P>
+        </div>
+
+        <div class="caja 4" ;
+            style="background-color: #D9138A; float: left; padding: 50px; padding: 50px; width: 300; height: 200px; float: right;">
+            <h1>
+                APARTADO</h1>
+            <p>Elija una opcion</p>
+            <input type="checkbox"> Opcion 1 <br>
+            <input type="checkbox"> Opcion 2 <br>
+            <input type="checkbox"> Opcion 3 <br>
+            <input type="submit">
+        </div>
+
+
+        </header>
+
+
+    </div>
+
+
+
+
 
 </body>
 
