@@ -10,9 +10,12 @@ header{
 }
 div {
     display: flex;
+
+    
 }
 li {
     list-style-type: none;
+    
     
 }
 nav{
@@ -20,5 +23,20 @@ nav{
     grid-column: auto;
 }
 ul{
-    
+    margin-top: -10px;
+   
+}
+div li {
+    align-items: center;
+    vertical-align: middle;
+    margin-block: 30px;
+}
+article {
+    vertical-align: middle;  
+}
+article h2 {
+    align-items: center;
+    vertical-align: middle;
+    margin-block: 50px;
+
 }
