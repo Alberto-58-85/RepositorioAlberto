@@ -1,0 +1,56 @@
+body{
+    background-color: #75C9B7
+}
+header, nav, div, footer, section {
+    text-align: center;
+}
+
+header {
+    background-color: #322E2F; padding: 0.5%;
+
+}
+h1 {
+    color: #C7DDCC;
+}
+
+nav {
+    text-align: center;
+    background-color: #C7DDCC;
+    border-top: #322E2F white;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+nav a {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: x-large;
+} 
+.contenedor {
+    background-color:#C7DDCC; width: 99%; display: flex; padding: 10px; margin-right: 10px;
+}
+section section {
+    background-color: #12A4D9; width: 75%; padding: 30px;   
+    font-size: 20px;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: 10px;
+}
+section h2 {    
+    margin-top: 10px;
+    padding: -10px;
+}     
+section section p {
+    margin-top: 10px;
+}                                               
+div {
+    background-color: #D9138A; width: 25%;margin-right: 2.5px;
+}
+div h2 {
+    margin-top: 50px;
+}
+footer {
+    background-color: #E2D810;padding: 30px; width: 96%;
+}
