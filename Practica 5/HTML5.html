@@ -1,26 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   
+
     <title>practica5</title>
-    <link rel="stylesheet" href="CSS3.css">
+    <style>
+        nav {
+            text-align: right;
+            padding: 5px;
+            margin-right: 100px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif,
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 250px;
+            width: 760px;
+        }
+        #uno {
+            /* font-size: 34px; */
+            grid-column: 1 / 4;
+            /* padding: 0px; */
+            /* text-align: left; */
+            font-size: 34px;
+            font-weight: 800;
+        }
+
+        #dos {
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+            grid-column:  2/3 ;
+            grid-row: 2/3;
+            /* font-size: 30px;
+            padding: 0px; */
+            font-size: 30.5px;
+            text-align:right;
+            margin-right: 10px;
+        }
+
+        #tres {
+            grid-column: 3/4;
+            grid-row: 2/4;
+            /* font-size: 50px;
+            font-family: Arial;
+            text-align: end; */
+            font-size: 62px;
+            font-weight: 800;
+            margin-top: -15px;
+            
+            
+            
+        }
+
+        #cuatro {
+            grid-column: 3/4;
+            grid-row: 4/5;
+            /* font-size: 50px;
+            font-family: Arial; */
+            font-size: 30.5px;
+            margin-top: -15px;
+        }
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color:  #b08f5c;
+            text-align: center;
+            font-size: 24px;
+            margin: auto;
+
+        }
+        p {
+            color: #646d6c;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+
+    </style>
+
 </head>
+
 <body>
     <img src="img/logo.svg" alt="logo">
     <nav>
-       <a href="">Residentes</a>
-       <a href="">Negocios</a>
-       <a href="">Visitantes</a>
-       <a href="">Gobierno</a>
+        <a href="">Residentes</a>
+        <a href="">Negocios</a>
+        <a href="">Visitantes</a>
+        <a href="">Gobierno</a>
     </nav>
-    <div style="background: url(img/hero.jpg);">
-        <h1>
-            APRENDE A PROGRAMAR <br>
-            EN LAS ESCUELAS <br>
-            DE CODIGO <br>git
-            DELA CDMX <br>
-        </h1>
+    <div style="background: url(img/hero.jpg) 100% / cover no-repeat; height: 338px; padding-left: 100px; padding-top: 100px;">
+        <div style="display: flex;">
+            <img style="height: 60px; margin-right: 10px;" src="img/hero-vector.svg" alt="">
 
-    </div>
+        <div class="grid-container" style="color: white;">
+            <span id="uno" >APRENDE A PROGRAMAR</span>
+            <span id="dos" >EN LAS</span>
+            <span id="tres" > ESCUELAS <br>DE CODIGO</span>
+            <span id="cuatro" >DE LA CDMX</span>
+        </div>
+        </div>
+    </div><br>
+    <h2>
+              ¿Quien puede incribirse?
+    </h2>
+        <p><b>Cualquier persona que quiera aprender a programar código y cuente con 4-8 horas disponibles a la semana</b>.
+        </p>
+        <p style="margin-top: -10px;">
+            *Menores de edad deberán entrar a las instalaciones acompañados de un adulto.
+        </p>
+  
 </body>
+
 </html>
